@@ -125,7 +125,7 @@ For Each ws In Worksheets
     'Print ticker value of Greatest Volume
     ws.Range("P4").Value = WorksheetFunction.Index(ws.Range("I:I"), WorksheetFunction.Match(ws.Range("Q4").Value, ws.Range("L:L"), 0))
    
-    'Autofit new greatest value columns
+    'Autofit new columns
     ws.Columns("I:Q").AutoFit
             
 Next ws
